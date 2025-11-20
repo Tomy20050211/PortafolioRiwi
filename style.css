@@ -14,14 +14,13 @@ body {
 
 a{
     text-decoration: none;
-    color:#44509b;
+    color:#d5d8e6ce;
     font-weight: 700;
 }
 
 li{
     list-style: none;
 }
-
 
 .principal {
     display: flex;
@@ -42,7 +41,6 @@ li{
     font-size: clamp(1.2rem, 3vw, 2.2rem);
 }
 
-
 .github-icon {
     position: absolute;
     top: 20px;
@@ -60,7 +58,6 @@ li{
     }
 }
 
-
 .riwi {
     display: flex;
     justify-content: center;
@@ -69,8 +66,21 @@ li{
 
 .riwi img {
     max-width: min(300px, 80%);
+    animation: flotar 3s ease-in-out infinite;
 }
 
+@keyframes flotar {
+    0% { transform: translateY(10px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(10px); }
+}
+
+
+.modulos:hover {
+    transition: background-position 1s ease, color 1 ease;
+    background-position: top left;
+    color: white;
+}
 
 button{
     background-color:#171E4A;
@@ -79,15 +89,20 @@ button{
     margin: 10px;
     padding: 1rem;
     border-radius: 1rem;
-    border-bottom: 5px solid #060d3b;
+    border-bottom: 5px solid #0000009a;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover{
     transform: translateY(-5px);
-    box-shadow: 0px 10px 10px #171e4ad3;
+    box-shadow: 0px 10px 10px #070e3ad5; 
+    background-color: #535fac;
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease,
+        color 0.3s ease; 
 }
-
 
 .containerPython{
     display: flex;
@@ -98,21 +113,31 @@ button:hover{
     width: 300px;
     border-radius: 2rem;
     padding: 2rem;
-    border: 2px solid #ffffff25;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #ffffff50;
+    transition: 
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease,
+        color 0.3s ease; 
     text-align: center;
 }
 
 .containerPython h2{
-    color: #171E4A;
+    color: #c2bae481;
     font-size: clamp(1.3rem, 3vw, 2rem);
 }
 
 .containerPython:hover{
     transform: translateY(-10px);
     box-shadow: 0px 15px 25px #171e4ad3;
+    
+    background-color: #0b033677;  
+    color: white; 
 }
 
+.containerPython:hover * {
+    color: white !important;
+}
 
 .modulos {
     margin-top: 40px;
@@ -122,7 +147,6 @@ button:hover{
     flex-wrap: wrap;
     padding: 0 1rem;
 }
-
 
 @media (max-width: 800px) {
     .modulos {
@@ -158,7 +182,6 @@ button:hover{
     box-sizing: border-box;
   }
 
- 
   .containerPython ul li button a {
     display: block;
     width: 100%;
@@ -172,17 +195,14 @@ button:hover{
     .principal h1 {
         font-size: 2.2rem;
     }
-
     .principal h2 {
         font-size: 1.3rem;
     }
-
     .github-icon {
         top: 10px;
         left: 10px;
     }
 }
-
 
 footer {
     margin-top: auto;
