@@ -71,7 +71,7 @@ body {
     
 }
 
-span{
+.change{
     background-color: white;
     color: #151b46;
 }
@@ -200,6 +200,14 @@ button:hover{
     padding: 0 1rem;
   
     
+}
+.myName{
+    color: #cdd3ff;
+      text-shadow:
+    0 0 5px rgb(167, 158, 255),
+    0 0 10px rgb(167, 158, 255),
+    0 0 10px rgb(167, 158, 255),
+    0 0 10px rgb(167, 158, 255);
 }
 
 footer {
