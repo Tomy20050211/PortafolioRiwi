@@ -95,8 +95,8 @@ header {
     align-items: center;
     color: #171E4A;
     gap: 10px;
-    text-align: center;
     height: 80px;
+    
    
 }
 
@@ -114,7 +114,12 @@ header {
 }
 .github-icon i {
     font-size: 40px;
+    transition: all 0.3s ease;
     
+}
+.github-icon i:hover{
+  color: #fff;
+
 }
 
 
@@ -224,16 +229,10 @@ button:hover{
         color 0.3s ease; 
         border: 0.3 ease;
         margin-top: 3rem;
-        height: 400px;
+        height: 27rem;
         color: #cdd3ff;
-
         position: relative;
         overflow: hidden;
-        
-       
-        
-
-
 }
 .city-​of-knowledge:hover{
     transform: translateY(-10px);
@@ -284,7 +283,8 @@ button:hover{
  
 }
 
-.city-​of-knowledge h2, p{
+.city-​of-knowledge h2,
+.city-​of-knowledge p{
     padding: 0.5rem;
 }
 .container-celulas{
@@ -316,10 +316,6 @@ footer h4{
     font-size: clamp(.8rem, 2vw, 1rem);
 }
 
-
-/* ============================
-   RESPONSIVE REAL - AJUSTES
-   ============================ */
 
 @media (max-width: 800px) {
   .info-cards {
